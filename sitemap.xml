@@ -2,12 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://commandbit.github.io/categories/</loc>
+    <loc>https://commandbit.github.io/tags/blog/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/posts/felmdrav_release/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/posts/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/tags/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/tags/theme/</loc>
+    <lastmod>2026-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/posts/featured_posts_announcement/</loc>
+    <lastmod>2026-01-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/tags/felmdrav/</loc>
+    <lastmod>2026-01-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://commandbit.github.io/</loc>
+    <lastmod>2025-12-12T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/tags/lorem-ipsum/</loc>
+    <lastmod>2025-12-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/tags/post/</loc>
+    <lastmod>2025-12-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/posts/post04/</loc>
+    <lastmod>2025-12-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/tags/text/</loc>
+    <lastmod>2025-12-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/posts/post03/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/tags/example/</loc>
+    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/posts/post05/</loc>
+    <lastmod>2018-11-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/feedback/</loc>
+    <lastmod>2018-11-04T21:52:00+01:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/tags/first-post/</loc>
+    <lastmod>2018-11-04T21:52:00+01:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/posts/my-first-post/</loc>
+    <lastmod>2018-11-04T21:52:00+01:00</lastmod>
+  </url><url>
+    <loc>https://commandbit.github.io/blocks/featured-posts/</loc>
+  </url><url>
+    <loc>https://commandbit.github.io/blocks/features-cards-screenshot/</loc>
+  </url><url>
+    <loc>https://commandbit.github.io/screenshot/</loc>
+  </url><url>
+    <loc>https://commandbit.github.io/about/</loc>
+  </url><url>
+    <loc>https://commandbit.github.io/blocks/</loc>
+  </url><url>
+    <loc>https://commandbit.github.io/layout/sidebar-both/</loc>
+  </url><url>
+    <loc>https://commandbit.github.io/categories/</loc>
+  </url><url>
+    <loc>https://commandbit.github.io/components/</loc>
+  </url><url>
+    <loc>https://commandbit.github.io/blocks/hero-a/</loc>
+  </url><url>
+    <loc>https://commandbit.github.io/blocks/hero-b/</loc>
+  </url><url>
+    <loc>https://commandbit.github.io/layout/</loc>
+  </url><url>
+    <loc>https://commandbit.github.io/posts/post02/</loc>
+  </url><url>
+    <loc>https://commandbit.github.io/sections/</loc>
   </url><url>
     <loc>https://commandbit.github.io/series/</loc>
   </url><url>
-    <loc>https://commandbit.github.io/tags/</loc>
+    <loc>https://commandbit.github.io/layout/sidebar-left/</loc>
+  </url><url>
+    <loc>https://commandbit.github.io/layout/sidebar-right/</loc>
   </url>
 </urlset>

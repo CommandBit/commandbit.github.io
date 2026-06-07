@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Layouts on Felmdrav - A Hugo Theme</title>
+    <link>https://commandbit.github.io/layout/</link>
+    <description>Recent content in Layouts on Felmdrav - A Hugo Theme</description>
+    <generator>Hugo</generator>
+    <language>en_US</language>
+    <atom:link href="https://commandbit.github.io/layout/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Both sidebars (3 / 6 / 3)</title>
+      <link>https://commandbit.github.io/layout/sidebar-both/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/layout/sidebar-both/</guid>
+      <description>&lt;p&gt;This page demonstrates a layout example with &lt;strong&gt;two sidebars&lt;/strong&gt; using a &lt;strong&gt;3 / 6 / 3 Bootstrap grid split&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This layout is primarily intended as a demonstration and may not be suitable for all content types.&lt;/p&gt;&#xA;&lt;p&gt;Use cases may include pages that require additional navigation, filters, or contextual panels.&lt;/p&gt;&#xA;&lt;p&gt;For configuration details and limitations, please refer to the README.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sidebar left (3 / 9)</title>
+      <link>https://commandbit.github.io/layout/sidebar-left/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/layout/sidebar-left/</guid>
+      <description>&lt;p&gt;This page demonstrates a layout example with a left sidebar using a default Bootstrap grid split of &lt;strong&gt;3 / 9 columns&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The sidebar typically contains secondary navigation, metadata, or contextual information, while the main content area uses the wider column.&lt;/p&gt;&#xA;&lt;p&gt;This page is intended as a layout reference for theme users.&lt;br&gt;&#xA;For configuration details and customization options, please refer to the README.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sidebar right (4 / 8)</title>
+      <link>https://commandbit.github.io/layout/sidebar-right/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/layout/sidebar-right/</guid>
+      <description>&lt;p&gt;This page demonstrates a layout example with a &lt;strong&gt;right sidebar&lt;/strong&gt; using an alternative Bootstrap grid split of &lt;strong&gt;4 / 8 columns&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This example intentionally uses a different column ratio to show how flexible the layout can be depending on content needs.&lt;/p&gt;&#xA;&lt;p&gt;This page is intended as a layout reference for theme users.&lt;br&gt;&#xA;For configuration details and customization options, please refer to the README.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post on Felmdrav - A Hugo Theme</title>
+    <link>https://commandbit.github.io/tags/post/</link>
+    <description>Recent content in Post on Felmdrav - A Hugo Theme</description>
+    <generator>Hugo</generator>
+    <language>en_US</language>
+    <lastBuildDate>Thu, 11 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://commandbit.github.io/tags/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post 04</title>
+      <link>https://commandbit.github.io/posts/post04/</link>
+      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/posts/post04/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas, arcu id malesuada finibus, ex lectus aliquet enim, mollis eleifend tortor est eu mi. Etiam dolor lectus, egestas et faucibus in, interdum et lorem. Nunc faucibus rhoncus scelerisque. Duis et massa id massa iaculis imperdiet non eget lorem. Curabitur porta convallis mauris, dapibus vestibulum enim interdum et. Nulla luctus sit amet lorem eget mollis. Donec varius malesuada ligula, vel vulputate ipsum laoreet nec. Nulla metus enim, varius quis congue quis, pulvinar sed nibh. Vivamus vel euismod magna. Vestibulum aliquam aliquam orci. Cras at nisi nulla.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Post 05</title>
+      <link>https://commandbit.github.io/posts/post05/</link>
+      <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/posts/post05/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et quam congue, tristique ipsum eget, rhoncus enim. Curabitur imperdiet, lacus vel condimentum vestibulum, est ipsum mattis tortor, ultricies finibus justo nunc sit amet nunc. Donec condimentum elit in tellus commodo lacinia. Morbi fringilla fermentum est eget semper. Curabitur ac congue ipsum. Aenean ac nulla ornare, pulvinar tellus eu, convallis felis. Donec eu ipsum elit.&lt;/p&gt;&#xA;&lt;p&gt;Fusce et finibus nunc. Praesent non nisl ex. Duis dapibus ut lacus et pellentesque. Vestibulum tristique consequat facilisis. Nulla semper aliquet elit, vel lobortis leo mattis sed. Suspendisse viverra nulla eros, in ornare mi pellentesque quis. Pellentesque ante nibh, consectetur eget dui sed, tincidunt iaculis eros. Proin vitae tellus vitae lorem porta dictum. Proin augue ipsum, feugiat in ante ut, sodales interdum lorem. Integer ut aliquet enim. In auctor, velit eu ultricies malesuada, ante erat pulvinar odio, ut cursus nibh risus in ipsum. In bibendum varius egestas. Donec tincidunt odio at lacinia sagittis.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My First Post</title>
+      <link>https://commandbit.github.io/posts/my-first-post/</link>
+      <pubDate>Sun, 04 Nov 2018 21:52:00 +0100</pubDate>
+      <guid>https://commandbit.github.io/posts/my-first-post/</guid>
+      <description>&lt;h1 id=&#34;test&#34;&gt;Test&lt;/h1&gt;&#xA;&lt;h2 id=&#34;another-test&#34;&gt;Another test&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Post 02</title>
+      <link>https://commandbit.github.io/posts/post02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/posts/post02/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet nec justo at maximus. Vivamus at neque quis tellus feugiat imperdiet nec a augue. Integer nec nisi ultricies, vulputate leo ac, tristique quam. Suspendisse aliquet nec arcu et dictum. Ut in convallis felis. Fusce id congue tellus. Ut urna massa, varius a finibus a, pretium id felis. Praesent aliquet neque vel nisl luctus, ac lobortis urna porttitor. Sed ac ultricies mi. Nunc pellentesque ut magna ac dapibus.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

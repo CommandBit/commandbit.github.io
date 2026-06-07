@@ -26,7 +26,75 @@
         integrity="sha256-CzVRUyEGHL4m9Yidiv8b6lBujD2EctQF02/4pwCL4dk=">
 
   <link rel="stylesheet" href="/css/bootstrap-icons.min.css">
-<style>
+<script src="/js/jquery-3.7.1.min.js"></script>
+<script>
+  
+  $(function () {
+    const themes = [
+      
+
+      "bolt", "brite", "btcn", "calabaza", "cerulean", "cosmo", "cyborg", "darkly", "flatly",
+      "hoff", "journal", "kdo2", "kdo_flatly", "kunsch", "litera", "lumen", "lux",
+      "malibu", "materia", "minim", "minty", "morph", "pulse", "quartz", "sandstone", "simplex",
+      "sketchy", "slate", "slate_accessibility_ready", "solar", "sonic", "spacelab",
+      "superhero", "united", "vapor", "yeti", "zephyr"
+
+    ];
+
+
+    const $link = $("#bs-theme");
+    const $picker = $("#themePicker");
+
+    
+    const bootstrapDefaultHref = `\/css\/bootstrap.min.css`;
+
+    if ($picker.length) {
+      
+      $picker.append($("<option/>").val("").text("Bootstrap (default)"));
+
+      
+      themes.forEach(t => $picker.append($("<option/>").val(t).text(t)));
+      function setTheme(t) {
+        const theme = (t ?? "").toString().trim();
+
+        
+        if (!theme) {
+          $link.attr("href", "");
+          localStorage.setItem("bootswatchTheme", "");
+          $picker.val("");
+
+          const url = new URL(window.location.href);
+          url.searchParams.delete("theme");
+          history.replaceState(null, "", url.toString());
+          return;
+        }
+
+        
+        $link.attr("href", `\/css\/bootswatch/${theme}/bootstrap.min.css`);
+        localStorage.setItem("bootswatchTheme", theme);
+        $picker.val(theme);
+
+        const url = new URL(window.location.href);
+        url.searchParams.set("theme", theme);
+        history.replaceState(null, "", url.toString());
+      }
+
+
+      const urlTheme = new URL(window.location.href).searchParams.get("theme");
+      const storedTheme = localStorage.getItem("bootswatchTheme");
+
+      
+      const siteDefault = ``;
+
+      const initial = (urlTheme !== null ? urlTheme : (storedTheme !== null ? storedTheme : siteDefault));
+      setTheme(initial);
+
+      $picker.on("change", function () { setTheme($(this).val()); });
+     
+    }
+
+  });
+</script><style>
     :root{
       --hero-pad: 1rem;
       --hero-title-min: 1.15rem;
@@ -86,6 +154,8 @@
 
   
   <style></style>
+
+<link id="bs-theme" rel="stylesheet" href="">
 </head>
 
 
@@ -203,7 +273,13 @@
 </ul>
 
             <div class="d-flex align-items-center ms-auto">
-</div>
+
+
+
+<div class="d-flex align-items-center gap-2 nav-item">
+  <span class="small navbar-text">Switch Theme:</span>
+  <select id="themePicker" class="form-select form-select-sm" style="width: 180px;"></select>
+</div></div>
           </div>
         </div>
       </nav>
@@ -213,17 +289,162 @@
   </div>
 </div><div id="main">
   <div class="container">
-  <div class="row"><main class="col-md-12" id="content"></main></div>
+  <div class="row"><main class="col-md-12" id="content">
+<article class="mb-5 post">
+  <header class="mb-2">
+
+    <h2 class="h4 mb-2">
+      <a class="link-body-emphasis text-decoration-none" href="/posts/felmdrav_release/">
+        Felmdrav Theme – First Public Release
+      </a>
+    </h2>
+      <div class="post-meta small text-body-secondary"><span>
+    <i class="bi bi-clock" aria-hidden="true"></i>
+    <span class="visually-hidden">Date: </span>
+    <time datetime=" 2026-01-10T00:00:00Z">
+      January 10, 2026
+    </time>
+  </span></div>
+
+  </header>
+
+  <div class="mb-3">
+    <p>The <strong>Felmdrav Hugo theme</strong> is now officially released.</p>
+<p>Felmdrav is designed with a clear focus on minimal structure, explicit configuration, and flexible content presentation. Built on Bootstrap 5, it supports a wide range of use cases—from simple blogs to more complex, content-driven websites.</p>
+<p>Key features include a configurable grid system, reusable content blocks, flexible content listings, and curated Featured Posts for prominent content placement.</p>
+<p>This first public release establishes a solid foundation for further development. While the theme will continue to evolve, it is already intended for real-world use and customization.</p>
+  </div></article>
+
+<article class="mb-5 post">
+  <header class="mb-2">
+
+    <h2 class="h4 mb-2">
+      <a class="link-body-emphasis text-decoration-none" href="/posts/featured_posts_announcement/">
+        Featured Posts Announcement
+      </a>
+    </h2>
+      <div class="post-meta small text-body-secondary"><span>
+    <i class="bi bi-clock" aria-hidden="true"></i>
+    <span class="visually-hidden">Date: </span>
+    <time datetime=" 2026-01-09T00:00:00Z">
+      January 9, 2026
+    </time>
+  </span></div>
+
+  </header>
+
+  <div class="mb-3">
+    <p>With the latest updates to the Felmdrav theme, we’re introducing <strong>Featured Posts</strong> — a simple way to highlight selected content where it matters most.</p>
+<p>Featured Posts allow you to draw attention to important articles, announcements, or updates without mixing them into the regular blog flow. Instead of relying on automatic ordering, featured content is <strong>explicitly curated</strong>, making it ideal for landing pages or front pages.</p>
+<p>Whether you want to promote a major release, an editorial highlight, or a key announcement, Featured Posts give you full control over how and where important content is presented.</p>
+  </div><footer>
+      <a class="btn btn-outline-primary btn-sm" href="/posts/featured_posts_announcement/">
+        Read more
+        <span class="visually-hidden">on Featured Posts Announcement</span>
+        <span aria-hidden="true">»</span>
+      </a>
+    </footer></article>
+<nav class="blog-pagination" aria-label="Pagination">
+  <ul class="pagination justify-content-center">
+
+    
+      <li class="page-item">
+        <a class="page-link" href="/categories/" aria-label="First">
+          <span aria-hidden="true">&laquo;&laquo;</span>
+        </a>
+      </li>
+    
+
+    
+      <li class="page-item disabled" aria-disabled="true">
+        <span class="page-link" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </span>
+      </li>
+    
+
+    
+    
+        
+        <li class="page-item active">
+          <a class="page-link" href="/categories/" aria-current="page">
+            1
+          </a>
+        </li>
+        
+        <li class="page-item ">
+          <a class="page-link" href="/categories/page/2/">
+            2
+          </a>
+        </li>
+        
+        <li class="page-item ">
+          <a class="page-link" href="/categories/page/3/">
+            3
+          </a>
+        </li>
+        
+        <li class="page-item ">
+          <a class="page-link" href="/categories/page/4/">
+            4
+          </a>
+        </li>
+
+    
+      <li class="page-item">
+        <a class="page-link" href="/categories/page/2/" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    
+
+    
+      <li class="page-item">
+        <a class="page-link" href="/categories/page/4/" aria-label="Last">
+          <span aria-hidden="true">&raquo;&raquo;</span>
+        </a>
+      </li>
+    
+
+  </ul>
+</nav></main></div>
 </div>
 
 
 </div>
 
     
-        
+        <div class="footer-container">
+      <div class="container pt-3 pb-2">
+        <footer>
+          <div class="row"><div class="col-12 col-md">
+    <p>This is a placeholder for a content file of the footer. You can use Markdown or HTML here. Just place your content files into a folder &ldquo;sections/footer&rdquo; in your content directory, make the page bundle &ldquo;headless&rdquo; and enable the footer in the site config file.</p>
+
+</div><div class="col-12 col-md">
+    <p>More content.</p>
+
+</div><div class="col-12 col-md">
+    <p>Again more content. And an example of creating links in the footer area.
+<br/>
+<a href="/about/">About</a></p>
+
+</div></div>
+        </footer>
+      </div>
+    </div>
     
     
-        
+        <div class="subfooter-container">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-12"><div class="mb-2">
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. Theme <a href="https://github.com/geschke/hugo-felmdrav">Felmdrav</a> by <a href="https://www.kuerbis.org">Ralf Geschke</a>. As you can see, this is an example of the area below the footer. You can change this.</p>
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
     
 
     <div id="media-width-detection-element"></div>

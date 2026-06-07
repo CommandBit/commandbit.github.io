@@ -6,6 +6,63 @@
     <description>Recent content in Tags on Felmdrav - A Hugo Theme</description>
     <generator>Hugo</generator>
     <language>en_US</language>
+    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://commandbit.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>https://commandbit.github.io/tags/blog/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Theme</title>
+      <link>https://commandbit.github.io/tags/theme/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/tags/theme/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Felmdrav</title>
+      <link>https://commandbit.github.io/tags/felmdrav/</link>
+      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/tags/felmdrav/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lorem Ipsum</title>
+      <link>https://commandbit.github.io/tags/lorem-ipsum/</link>
+      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/tags/lorem-ipsum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Post</title>
+      <link>https://commandbit.github.io/tags/post/</link>
+      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/tags/post/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Text</title>
+      <link>https://commandbit.github.io/tags/text/</link>
+      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/tags/text/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Example</title>
+      <link>https://commandbit.github.io/tags/example/</link>
+      <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/tags/example/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>First Post</title>
+      <link>https://commandbit.github.io/tags/first-post/</link>
+      <pubDate>Sun, 04 Nov 2018 21:52:00 +0100</pubDate>
+      <guid>https://commandbit.github.io/tags/first-post/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

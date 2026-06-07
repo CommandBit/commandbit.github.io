@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blocks on Felmdrav - A Hugo Theme</title>
+    <link>https://commandbit.github.io/blocks/</link>
+    <description>Recent content in Blocks on Felmdrav - A Hugo Theme</description>
+    <generator>Hugo</generator>
+    <language>en_US</language>
+    <atom:link href="https://commandbit.github.io/blocks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://commandbit.github.io/blocks/featured-posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/blocks/featured-posts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://commandbit.github.io/blocks/features-cards-screenshot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/blocks/features-cards-screenshot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hero heading A</title>
+      <link>https://commandbit.github.io/blocks/hero-a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/blocks/hero-a/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hero heading b</title>
+      <link>https://commandbit.github.io/blocks/hero-b/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://commandbit.github.io/blocks/hero-b/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

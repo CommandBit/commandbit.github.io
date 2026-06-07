@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en_US">
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    Blog
+     | 
+    Felmdrav - A Hugo Theme
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+    <meta name="dc.copyright" content="Karl Mustermann">
+  
+    <meta name="description" content="This is only an example value for the meta description">
+  
+    <meta name="keywords" content="example, site, theme, felmdrav">
+  
+
+  
+
+  <link rel="stylesheet"
+        href="/css/felmdrav-bundle.min.0b35515321061cbe26f5889d8aff1bea506e8c3d8472d405d36ff8a7008be1d9.css"
+        integrity="sha256-CzVRUyEGHL4m9Yidiv8b6lBujD2EctQF02/4pwCL4dk=">
+
+  <link rel="stylesheet" href="/css/bootstrap-icons.min.css">
+<script src="/js/jquery-3.7.1.min.js"></script>
+<script>
+  
+  $(function () {
+    const themes = [
+      
+
+      "bolt", "brite", "btcn", "calabaza", "cerulean", "cosmo", "cyborg", "darkly", "flatly",
+      "hoff", "journal", "kdo2", "kdo_flatly", "kunsch", "litera", "lumen", "lux",
+      "malibu", "materia", "minim", "minty", "morph", "pulse", "quartz", "sandstone", "simplex",
+      "sketchy", "slate", "slate_accessibility_ready", "solar", "sonic", "spacelab",
+      "superhero", "united", "vapor", "yeti", "zephyr"
+
+    ];
+
+
+    const $link = $("#bs-theme");
+    const $picker = $("#themePicker");
+
+    
+    const bootstrapDefaultHref = `\/css\/bootstrap.min.css`;
+
+    if ($picker.length) {
+      
+      $picker.append($("<option/>").val("").text("Bootstrap (default)"));
+
+      
+      themes.forEach(t => $picker.append($("<option/>").val(t).text(t)));
+      function setTheme(t) {
+        const theme = (t ?? "").toString().trim();
+
+        
+        if (!theme) {
+          $link.attr("href", "");
+          localStorage.setItem("bootswatchTheme", "");
+          $picker.val("");
+
+          const url = new URL(window.location.href);
+          url.searchParams.delete("theme");
+          history.replaceState(null, "", url.toString());
+          return;
+        }
+
+        
+        $link.attr("href", `\/css\/bootswatch/${theme}/bootstrap.min.css`);
+        localStorage.setItem("bootswatchTheme", theme);
+        $picker.val(theme);
+
+        const url = new URL(window.location.href);
+        url.searchParams.set("theme", theme);
+        history.replaceState(null, "", url.toString());
+      }
+
+
+      const urlTheme = new URL(window.location.href).searchParams.get("theme");
+      const storedTheme = localStorage.getItem("bootswatchTheme");
+
+      
+      const siteDefault = ``;
+
+      const initial = (urlTheme !== null ? urlTheme : (storedTheme !== null ? storedTheme : siteDefault));
+      setTheme(initial);
+
+      $picker.on("change", function () { setTheme($(this).val()); });
+     
+    }
+
+  });
+</script><style>
+    :root{
+      --hero-pad: 1rem;
+      --hero-title-min: 1.15rem;
+      --hero-title-max: 3.0rem;
+      --hero-sub-min: 0.9rem;
+      --hero-sub-max: 1.55rem;
+      --hero-text-maxw: 68ch;
+      --hero-title-weight: 800;
+      --hero-sub-weight: 450;
+
+
+    }
+
+
+
+    body{}
+
+     
+    .hero-overlay{ padding: var(--hero-pad); }
+
+    .hero-text{
+      max-width: min(var(--hero-text-maxw), 100%);}
+
+
+
+     
+    .hero-text.is-backdrop{
+      background: var(--hero-backdrop-bg);
+      border-radius: var(--hero-backdrop-radius);
+      padding: var(--hero-backdrop-pad);
+    }
+
+
+    .hero-title{
+      font-weight: var(--hero-title-weight);
+      font-size: clamp(var(--hero-title-min), 2.2vw + 0.65rem, var(--hero-title-max));
+      line-height: 1.05;
+      white-space: nowrap;
+    }
+
+    .hero-subtitle{
+      font-weight: var(--hero-sub-weight);
+      font-size: clamp(var(--hero-sub-min), 1.1vw + 0.5rem, var(--hero-sub-max));
+      line-height: 1.2;
+      text-wrap: pretty;
+    }@media (max-width: 360px){
+      .hero-title{ white-space: normal; }
+    } 
+      .hero-title{ color: #222222ff; }
+      .hero-subtitle{ color: #435465ff; }
+  </style>
+
+  
+
+  
+  <style></style>
+
+  
+  <style></style>
+
+<link id="bs-theme" rel="stylesheet" href="">
+</head>
+
+
+<body>
+
+<div id="header" role="banner" >
+  <div class="container">
+    <header class="masthead">
+
+      
+      <a href="https://commandbit.github.io/" rel="home" class="hero d-block position-relative overflow-hidden">
+        <img src="https://commandbit.github.io/img/header_bg_example.png" class="hero-img w-100" alt="alt text for header image">
+
+        
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-start align-items-end text-start">
+          <div class="hero-overlay container">
+            <div class="hero-text">
+              <div class="hero-title" style="color: #222222ff;" >
+                Felmdrav - A Hugo Theme
+              </div>
+
+              
+              <div class="hero-subtitle" style="color: #435465ff;" >
+                Example of Subtitle
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+      </a>
+      
+
+      
+      
+
+
+
+      
+      <nav id="navbarMain"
+        class="navbar navbar-expand-sm mb-3 navbar-dark bg-primary"
+        >
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+
+  
+  <li class="nav-item me-2">
+    <a class="nav-link " href="/">
+      
+      Home
+    </a>
+  </li>
+
+  
+
+  
+  <li class="nav-item me-2">
+    <a class="nav-link " href="/posts/">
+      
+      Blog
+    </a>
+  </li>
+
+  
+
+  
+  <li class="nav-item me-2">
+    <a class="nav-link " href="/components/">
+      
+      Components
+    </a>
+  </li>
+
+  
+
+  <li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle "
+   href="#" id="navbarDropdown-layout" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  Layout
+</a>
+
+
+    <div class="sub-menu dropdown-menu" aria-labelledby="navbarDropdown-layout">
+      
+
+      <a class="dropdown-item" href="/layout/sidebar-left/">Sidebar left (3/9)</a>
+      
+
+      <a class="dropdown-item" href="/layout/sidebar-right/">Sidebar right (4/8)</a>
+      
+
+      <a class="dropdown-item" href="/layout/sidebar-both/">Both sidebars (3/6/3)</a>
+      
+    </div>
+  </li>
+  
+
+  
+  <li class="nav-item me-2">
+    <a class="nav-link " href="/about/">
+      
+      About
+    </a>
+  </li>
+
+  
+</ul>
+
+            <div class="d-flex align-items-center ms-auto">
+
+
+
+<div class="d-flex align-items-center gap-2 nav-item">
+  <span class="small navbar-text">Switch Theme:</span>
+  <select id="themePicker" class="form-select form-select-sm" style="width: 180px;"></select>
+</div></div>
+          </div>
+        </div>
+      </nav>
+      
+
+    </header>
+  </div>
+</div><div id="main">
+  <div class="container">
+  <div class="row"><main class="col-md-12" id="content">
+<article class="mb-5 post">
+  <header class="mb-2">
+
+    <h2 class="h4 mb-2">
+      <a class="link-body-emphasis text-decoration-none" href="/posts/post02/">
+        Post 02
+      </a>
+    </h2>
+      <div class="post-meta small text-body-secondary"><span>
+    <i class="bi bi-person" aria-hidden="true"></i>
+    <span class="visually-hidden">Author: </span>
+    Ralf Geschke
+  </span></div>
+
+  </header>
+
+  <div class="mb-3">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam laoreet nec justo at maximus. Vivamus at neque quis tellus feugiat imperdiet nec a augue. Integer nec nisi ultricies, vulputate leo ac, tristique quam. Suspendisse aliquet nec arcu et dictum. Ut in convallis felis. Fusce id congue tellus. Ut urna massa, varius a finibus a, pretium id felis. Praesent aliquet neque vel nisl luctus, ac lobortis urna porttitor. Sed ac ultricies mi. Nunc pellentesque ut magna ac dapibus.</p>
+  </div><footer>
+      <a class="btn btn-outline-primary btn-sm" href="/posts/post02/">
+        Read more
+        <span class="visually-hidden">on Post 02</span>
+        <span aria-hidden="true">»</span>
+      </a>
+    </footer></article>
+<nav class="blog-pagination" aria-label="Pagination">
+  <ul class="pagination justify-content-center">
+
+    
+      <li class="page-item">
+        <a class="page-link" href="/tags/blog/" aria-label="First">
+          <span aria-hidden="true">&laquo;&laquo;</span>
+        </a>
+      </li>
+    
+
+    
+      <li class="page-item">
+        <a class="page-link" href="/tags/blog/page/3/" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+    
+
+    
+    
+        
+        <li class="page-item ">
+          <a class="page-link" href="/tags/blog/">
+            1
+          </a>
+        </li>
+        
+        <li class="page-item ">
+          <a class="page-link" href="/tags/blog/page/2/">
+            2
+          </a>
+        </li>
+        
+        <li class="page-item ">
+          <a class="page-link" href="/tags/blog/page/3/">
+            3
+          </a>
+        </li>
+        
+        <li class="page-item active">
+          <a class="page-link" href="/tags/blog/page/4/" aria-current="page">
+            4
+          </a>
+        </li>
+
+    
+      <li class="page-item disabled" aria-disabled="true">
+        <span class="page-link" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </span>
+      </li>
+    
+
+    
+      <li class="page-item">
+        <a class="page-link" href="/tags/blog/page/4/" aria-label="Last">
+          <span aria-hidden="true">&raquo;&raquo;</span>
+        </a>
+      </li>
+    
+
+  </ul>
+</nav></main></div>
+</div>
+
+
+</div>
+
+    
+        <div class="footer-container">
+      <div class="container pt-3 pb-2">
+        <footer>
+          <div class="row"><div class="col-12 col-md">
+    <p>This is a placeholder for a content file of the footer. You can use Markdown or HTML here. Just place your content files into a folder &ldquo;sections/footer&rdquo; in your content directory, make the page bundle &ldquo;headless&rdquo; and enable the footer in the site config file.</p>
+
+</div><div class="col-12 col-md">
+    <p>More content.</p>
+
+</div><div class="col-12 col-md">
+    <p>Again more content. And an example of creating links in the footer area.
+<br/>
+<a href="/about/">About</a></p>
+
+</div></div>
+        </footer>
+      </div>
+    </div>
+    
+    
+        <div class="subfooter-container">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-12"><div class="mb-2">
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. Theme <a href="https://github.com/geschke/hugo-felmdrav">Felmdrav</a> by <a href="https://www.kuerbis.org">Ralf Geschke</a>. As you can see, this is an example of the area below the footer. You can change this.</p>
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div id="media-width-detection-element"></div>
+
+<script src="https://commandbit.github.io/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

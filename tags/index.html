@@ -26,7 +26,75 @@
         integrity="sha256-CzVRUyEGHL4m9Yidiv8b6lBujD2EctQF02/4pwCL4dk=">
 
   <link rel="stylesheet" href="/css/bootstrap-icons.min.css">
-<style>
+<script src="/js/jquery-3.7.1.min.js"></script>
+<script>
+  
+  $(function () {
+    const themes = [
+      
+
+      "bolt", "brite", "btcn", "calabaza", "cerulean", "cosmo", "cyborg", "darkly", "flatly",
+      "hoff", "journal", "kdo2", "kdo_flatly", "kunsch", "litera", "lumen", "lux",
+      "malibu", "materia", "minim", "minty", "morph", "pulse", "quartz", "sandstone", "simplex",
+      "sketchy", "slate", "slate_accessibility_ready", "solar", "sonic", "spacelab",
+      "superhero", "united", "vapor", "yeti", "zephyr"
+
+    ];
+
+
+    const $link = $("#bs-theme");
+    const $picker = $("#themePicker");
+
+    
+    const bootstrapDefaultHref = `\/css\/bootstrap.min.css`;
+
+    if ($picker.length) {
+      
+      $picker.append($("<option/>").val("").text("Bootstrap (default)"));
+
+      
+      themes.forEach(t => $picker.append($("<option/>").val(t).text(t)));
+      function setTheme(t) {
+        const theme = (t ?? "").toString().trim();
+
+        
+        if (!theme) {
+          $link.attr("href", "");
+          localStorage.setItem("bootswatchTheme", "");
+          $picker.val("");
+
+          const url = new URL(window.location.href);
+          url.searchParams.delete("theme");
+          history.replaceState(null, "", url.toString());
+          return;
+        }
+
+        
+        $link.attr("href", `\/css\/bootswatch/${theme}/bootstrap.min.css`);
+        localStorage.setItem("bootswatchTheme", theme);
+        $picker.val(theme);
+
+        const url = new URL(window.location.href);
+        url.searchParams.set("theme", theme);
+        history.replaceState(null, "", url.toString());
+      }
+
+
+      const urlTheme = new URL(window.location.href).searchParams.get("theme");
+      const storedTheme = localStorage.getItem("bootswatchTheme");
+
+      
+      const siteDefault = ``;
+
+      const initial = (urlTheme !== null ? urlTheme : (storedTheme !== null ? storedTheme : siteDefault));
+      setTheme(initial);
+
+      $picker.on("change", function () { setTheme($(this).val()); });
+     
+    }
+
+  });
+</script><style>
     :root{
       --hero-pad: 1rem;
       --hero-title-min: 1.15rem;
@@ -86,6 +154,8 @@
 
   
   <style></style>
+
+<link id="bs-theme" rel="stylesheet" href="">
 </head>
 
 
@@ -203,7 +273,13 @@
 </ul>
 
             <div class="d-flex align-items-center ms-auto">
-</div>
+
+
+
+<div class="d-flex align-items-center gap-2 nav-item">
+  <span class="small navbar-text">Switch Theme:</span>
+  <select id="themePicker" class="form-select form-select-sm" style="width: 180px;"></select>
+</div></div>
           </div>
         </div>
       </nav>
@@ -217,16 +293,235 @@
    <h1>Tags</h1>
    
     
+        
+<article class="mb-5 post">
+  <header class="mb-2">
+
+    <h2 class="h4 mb-2">
+      <a class="link-body-emphasis text-decoration-none" href="/tags/blog/">
+        Blog
+      </a>
+    </h2>
+      <div class="post-meta small text-body-secondary"><span>
+    <i class="bi bi-clock" aria-hidden="true"></i>
+    <span class="visually-hidden">Date: </span>
+    <time datetime=" 2026-01-10T00:00:00Z">
+      January 10, 2026
+    </time>
+  </span></div>
+
+  </header>
+
+  <div class="mb-3">
+    
+  </div></article>
+
+    
+        
+<article class="mb-5 post">
+  <header class="mb-2">
+
+    <h2 class="h4 mb-2">
+      <a class="link-body-emphasis text-decoration-none" href="/tags/theme/">
+        Theme
+      </a>
+    </h2>
+      <div class="post-meta small text-body-secondary"><span>
+    <i class="bi bi-clock" aria-hidden="true"></i>
+    <span class="visually-hidden">Date: </span>
+    <time datetime=" 2026-01-10T00:00:00Z">
+      January 10, 2026
+    </time>
+  </span></div>
+
+  </header>
+
+  <div class="mb-3">
+    
+  </div></article>
+
+    
+        
+<article class="mb-5 post">
+  <header class="mb-2">
+
+    <h2 class="h4 mb-2">
+      <a class="link-body-emphasis text-decoration-none" href="/tags/felmdrav/">
+        Felmdrav
+      </a>
+    </h2>
+      <div class="post-meta small text-body-secondary"><span>
+    <i class="bi bi-clock" aria-hidden="true"></i>
+    <span class="visually-hidden">Date: </span>
+    <time datetime=" 2026-01-09T00:00:00Z">
+      January 9, 2026
+    </time>
+  </span></div>
+
+  </header>
+
+  <div class="mb-3">
+    
+  </div></article>
+
+    
+        
+<article class="mb-5 post">
+  <header class="mb-2">
+
+    <h2 class="h4 mb-2">
+      <a class="link-body-emphasis text-decoration-none" href="/tags/lorem-ipsum/">
+        Lorem Ipsum
+      </a>
+    </h2>
+      <div class="post-meta small text-body-secondary"><span>
+    <i class="bi bi-clock" aria-hidden="true"></i>
+    <span class="visually-hidden">Date: </span>
+    <time datetime=" 2025-12-11T00:00:00Z">
+      December 11, 2025
+    </time>
+  </span></div>
+
+  </header>
+
+  <div class="mb-3">
+    
+  </div></article>
+
+    
+        
+<article class="mb-5 post">
+  <header class="mb-2">
+
+    <h2 class="h4 mb-2">
+      <a class="link-body-emphasis text-decoration-none" href="/tags/post/">
+        Post
+      </a>
+    </h2>
+      <div class="post-meta small text-body-secondary"><span>
+    <i class="bi bi-clock" aria-hidden="true"></i>
+    <span class="visually-hidden">Date: </span>
+    <time datetime=" 2025-12-11T00:00:00Z">
+      December 11, 2025
+    </time>
+  </span></div>
+
+  </header>
+
+  <div class="mb-3">
+    
+  </div></article>
+
+    
+        
+<article class="mb-5 post">
+  <header class="mb-2">
+
+    <h2 class="h4 mb-2">
+      <a class="link-body-emphasis text-decoration-none" href="/tags/text/">
+        Text
+      </a>
+    </h2>
+      <div class="post-meta small text-body-secondary"><span>
+    <i class="bi bi-clock" aria-hidden="true"></i>
+    <span class="visually-hidden">Date: </span>
+    <time datetime=" 2025-12-11T00:00:00Z">
+      December 11, 2025
+    </time>
+  </span></div>
+
+  </header>
+
+  <div class="mb-3">
+    
+  </div></article>
+
+    
+        
+<article class="mb-5 post">
+  <header class="mb-2">
+
+    <h2 class="h4 mb-2">
+      <a class="link-body-emphasis text-decoration-none" href="/tags/example/">
+        Example
+      </a>
+    </h2>
+      <div class="post-meta small text-body-secondary"><span>
+    <i class="bi bi-clock" aria-hidden="true"></i>
+    <span class="visually-hidden">Date: </span>
+    <time datetime=" 2018-11-10T00:00:00Z">
+      November 10, 2018
+    </time>
+  </span></div>
+
+  </header>
+
+  <div class="mb-3">
+    
+  </div></article>
+
+    
+        
+<article class="mb-5 post">
+  <header class="mb-2">
+
+    <h2 class="h4 mb-2">
+      <a class="link-body-emphasis text-decoration-none" href="/tags/first-post/">
+        First Post
+      </a>
+    </h2>
+      <div class="post-meta small text-body-secondary"><span>
+    <i class="bi bi-clock" aria-hidden="true"></i>
+    <span class="visually-hidden">Date: </span>
+    <time datetime=" 2018-11-04T21:52:00&#43;01:00">
+      November 4, 2018
+    </time>
+  </span></div>
+
+  </header>
+
+  <div class="mb-3">
+    
+  </div></article>
+
+    
   </div>
 </main>
 
 </div>
 
     
-        
+        <div class="footer-container">
+      <div class="container pt-3 pb-2">
+        <footer>
+          <div class="row"><div class="col-12 col-md">
+    <p>This is a placeholder for a content file of the footer. You can use Markdown or HTML here. Just place your content files into a folder &ldquo;sections/footer&rdquo; in your content directory, make the page bundle &ldquo;headless&rdquo; and enable the footer in the site config file.</p>
+
+</div><div class="col-12 col-md">
+    <p>More content.</p>
+
+</div><div class="col-12 col-md">
+    <p>Again more content. And an example of creating links in the footer area.
+<br/>
+<a href="/about/">About</a></p>
+
+</div></div>
+        </footer>
+      </div>
+    </div>
     
     
-        
+        <div class="subfooter-container">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-12"><div class="mb-2">
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. Theme <a href="https://github.com/geschke/hugo-felmdrav">Felmdrav</a> by <a href="https://www.kuerbis.org">Ralf Geschke</a>. As you can see, this is an example of the area below the footer. You can change this.</p>
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
     
 
     <div id="media-width-detection-element"></div>
